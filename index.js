@@ -208,11 +208,14 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-
+console.log(artists[0].name)
+console.log(artists[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+//Array.splice(start_index, delete_count, value1, value2, value3, ...)
 
-
+artists[8].name = "Vincent Van Gogh"
+console.log(artists[8].name)
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -223,19 +226,29 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-    /* code here */
-  }
-  
+    var print = "The artist at index "+id+" is "+name+"."
+    console.log(print)
+  }  
+getArtistByIndex(0, "Amedeo Modigliani")
+
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+function get20s(artists){
+  var twenties = []
+  for (var i = 0; i < artists.length-1; i++){
+  var born = artists[i].years.slice(0, 4)
+  var died = artists[i].years.slice(7, 11)
+  if (born >= 1900 && died <= 2000){
+    twenties.push(artists[i].name)
+  }
 }
+console.log(twenties)
+return twenties
+}
+get20s(artists)
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -248,12 +261,12 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+function removeArtist(artistsName, index) {
+    
+}
   
-  /**
-
+removeArtist("Amedeo Modigliani", 0)
+console.log(removeArtist("Amedeo Modigliani", 0), artists.length)
 
 
 
