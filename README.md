@@ -23,10 +23,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+
+-It is a program that processes data to make it easier for us to write and yet the same for the computer to read
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+-My favorite concept are the parametric mixins. The one that gave me the most trouble was when I was trying to use a variable as if it was a parametric mixin. That problem disappeared once I learned about the parametric mixins.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+-A variable is a container that holds data. You can create a variable and name it anything you want in order to represent your data and use it inside your code.
+
 4. What is the purpose of using functions in code?
+
+-The purpose of functions is to create a block of code that is reusable. You can trigger it multiple times. It also has flexibility since you can pass in different arguments each time you run it.
+
 5. What is JSON data?
+
+-JSON data is a file format that allows you to transfer data such as array types.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
